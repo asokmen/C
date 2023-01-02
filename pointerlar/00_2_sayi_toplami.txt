@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<string.h>
+
+
+
+int		main(void)
+{
+    //pointer ile iki sayi toplami
+    
+    int sayi1,sayi2,toplam;
+    int *ptr1;
+    int *ptr2;
+    
+    ptr1=&sayi1;
+    ptr2=&sayi2;
+    printf("2 adet sayi gir:\n");
+    scanf("%d%d",ptr1,ptr2);
+    toplam = *ptr1+*ptr2;
+    
+    printf("toplam: %d",toplam);
+}
+

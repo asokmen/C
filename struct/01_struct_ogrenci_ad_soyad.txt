@@ -1,0 +1,28 @@
+
+#include <stdio.h>
+#include<string.h>
+
+
+struct ogrenci{
+
+    char ad[10];
+    char soyad[10];
+    int yas;
+};
+
+
+
+
+
+int main()
+{
+    struct ogrenci aybuke;
+    strcpy(aybuke.ad,"Aybuke");
+    strcpy(aybuke.soyad,"Sokmen");
+    aybuke.yas=27;
+    
+    printf("%s \t %s \t %d",aybuke.ad,aybuke.soyad,aybuke.yas);
+
+
+    return 0;
+}

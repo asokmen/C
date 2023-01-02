@@ -1,0 +1,37 @@
+
+#include <stdio.h>
+#include<string.h>
+
+
+/*
+1-Öğrencinin okul numarası ,adı,soyadı ve yaş bilgilerini tutan ogrenci_bilgi adlı bir yapı tanımlayınız.
+2-ogrenci_1 ve ogrenci_2 degiskenlerini ogrenci_bilgi yapı tipinde tanımlayınız.
+3-bilgileri opgrenci_1 e aktar
+4-ogrencş_1 i ogrenci_2 ye kopyala
+*/
+
+
+
+struct ogrenci_bilgi{
+    int okul_no;
+    char ad[10];
+    char soyad[10];
+    int yas;
+};
+
+int main()
+{
+    struct ogrenci_bilgi ogrenci_1,ogrenci_2;
+    
+    ogrenci_1.okul_no=156;
+    strcpy(ogrenci_1.ad,"Aybuke");
+    strcpy(ogrenci_1.soyad,"Sokmen");
+    ogrenci_1.yas=27;
+    
+    ogrenci_2=ogrenci_1;
+    
+    printf("%s \t %s \t %d",ogrenci_2.ad,ogrenci_2.soyad,ogrenci_2.yas);
+
+
+    return 0;
+}

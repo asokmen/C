@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include<string.h>
+
+
+void temp(int *sayi1,int *sayi2)
+{
+    int memory;
+    memory=*sayi1;
+    *sayi1=*sayi2;
+    *sayi2=memory;
+    
+   
+}
+
+int		main(void)
+{
+    //pointer ile iki sayinin yerinin değiştirilmesi öncesi ve sonrası olarak ekrana bastir
+    
+    int sayi1,sayi2;
+    
+    printf("sayi gir: \n");
+    
+    scanf("%d%d",&sayi1,&sayi2);
+    
+    printf("ONCE: 1. sayi=%d 2.sayi=%d\n",sayi1,sayi2 );
+    
+    temp(&sayi1,&sayi2);
+     printf("SONRA: 1. sayi=%d 2.sayi=%d\n",sayi1,sayi2 );
+}
+

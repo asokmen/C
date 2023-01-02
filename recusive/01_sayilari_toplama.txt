@@ -1,0 +1,22 @@
+// Klavyeden girilen bir N pozitif tamsayisina kadar olan sayilarin toplanarak ekrana yazdiran fonksiyon
+#include <stdio.h>
+
+int toplam(int sayi)
+{
+    if(sayi == 1)
+    {
+        return 1;
+    }
+    else {
+        return sayi+toplam(sayi-1);
+    }
+
+}
+int main() {
+    int n;
+
+    printf("Sayi gir: ");
+    scanf("%d",&n);
+    printf("Toplam sonucu =%d",toplam(n));
+    return 0;
+}

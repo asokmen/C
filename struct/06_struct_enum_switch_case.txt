@@ -1,0 +1,54 @@
+/*
+Yılın aylarını gosteren enum hazırlayın
+aynı şekilde aldığı parametreye göre yılın ayını donduren bir fonksiyon yazınız.
+*/
+#include <stdio.h>
+#include<string.h>
+
+
+typedef enum ay{
+    Ocak=1,
+    Subat,
+    Mart,
+    Nisan,
+    Mayis,
+    Haziran,
+    Temmuz
+}ay;
+
+void ayi_goster(ay degisken)
+{
+    switch(degisken)
+    {
+        case 1:
+            printf("ocak");
+            break;
+        case 2:
+            printf("subat");
+            break;
+        case 3:
+            printf("mart");
+            break;
+        case 4:
+            printf("nisan");
+            break;
+        case 5:
+            printf("mayis");
+            break;
+        case 6:
+            printf("haziran");
+            break;
+        
+    }
+}
+
+
+int main()
+{
+    ay aybuke=Nisan;
+    ayi_goster(aybuke);
+
+
+    return 0;
+}
+

@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+#include<string.h>
+
+
+/*
+1-nokta adında bir struct yaratın
+2-(ABS -> X ,ORD -> Y (float))
+3-P adında nokta yaratın
+4-p noktasının abs=3 ord=2 ataması yap
+5-printf içinde yazdır
+*/
+
+
+
+struct nokta{
+    float ABS;
+    float ORD;
+};
+
+int main()
+{
+    struct nokta p;
+    p.ABS=3;
+    p.ORD=2;
+    printf("%f %f", p.ABS,p.ORD);
+
+
+    return 0;
+}

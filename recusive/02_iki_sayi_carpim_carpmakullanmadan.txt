@@ -1,0 +1,25 @@
+// Klavyeden girilen iki tam sayının carpım sembolü kullanmadan gerçekleştiren c programını recursive ile yaz.
+#include <stdio.h>
+
+
+
+int carpim(int sayi1 ,int sayi2)
+{
+    int sonuc;
+    if(sayi2==1)
+    {
+        sonuc=sayi1;
+    }
+    else{
+       return sonuc=sayi1+carpim(sayi1,sayi2-1);
+    }
+    
+}
+int main() {
+    int a,b;
+
+    printf("2 Sayi gir: \n");
+    scanf("%d%d",&a,&b);
+    printf("%d carpi %d = %d",a,b,carpim(a,b));
+    return 0;
+}

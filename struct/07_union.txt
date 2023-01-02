@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include<string.h>
+
+
+union test{
+    int x;
+    int y;
+};
+
+int main()
+{
+    
+    union test t;
+    t.x=2;
+    printf("%d \n",t.x);
+    
+    
+    t.y=5;
+    printf("%d \n",t.y);
+    printf("Tuttugu alan = %ld byte",sizeof(t));
+    return 0;
+}
